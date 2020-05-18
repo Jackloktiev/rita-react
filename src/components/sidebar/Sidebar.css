@@ -1,0 +1,147 @@
+.sidebar {
+    background-color: #fff;
+    height: 100vh;
+    width: 15%;
+    color: #808080;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; 
+}
+
+@media only screen and (max-width: 56.25em) {
+    .sidebar {
+        width: 25%; 
+    } 
+}
+
+@media only screen and (max-width: 31.875em) {
+    .sidebar {
+    position: static;
+    height: auto;
+    width: 100%;
+    -webkit-transition: all .3s;
+    transition: all .3s; 
+}
+
+.sidebar:focus div {
+    display: block;
+    height: 100%; } 
+}
+
+.sidebar__name {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 3rem; 
+    text-decoration: none;
+    color: #808080;;
+}
+
+.sidebar__nav {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+@media only screen and (max-width: 31.875em) {
+    .sidebar__nav {
+        display: none;
+        height: 0; 
+    } 
+    .sidebar__nav--show {
+        text-align: center;
+        margin: 0 auto; 
+        margin-top: .5rem;
+    }
+}
+.sidebar__illustration {
+    margin-bottom: 1rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.5rem; 
+    cursor: pointer;
+}
+
+.sidebar__list {
+    margin-bottom: 3rem;
+    list-style-type: square;
+    list-style-position: inside; 
+}
+
+.sidebar__list-item {
+    font-size: 1.5rem; 
+}
+.sidebar__list-item:hover {
+    color: black;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    cursor: pointer; 
+}
+
+.sidebar__about {
+    font-family: 'Comic Neue', cursive;
+    text-transform: uppercase;
+    font-size: 1.5rem; 
+    margin-bottom: 3rem;
+}
+
+.sidebar__about:hover {
+    color: black;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    cursor: pointer; 
+}
+
+.sidebar__key {
+    width: 2rem;
+}
+
+.sidebar__key:hover{
+    width: 2.2rem;
+    cursor: pointer; 
+}
+
+.sidebar__social-media {
+    text-align: center;
+    margin-bottom: 3rem; 
+}
+
+@media only screen and (max-width: 31.875em) {
+    .sidebar__social-media {
+        display: none;
+        height: 0; 
+    } 
+    .sidebar__social-media--show {
+        text-align: center;
+        margin-bottom: 3rem; 
+    }
+}
+.sidebar__social-media__icon {
+    width: 3rem; 
+    cursor: pointer;
+}
+
+.arrow {
+    display:none;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+}
+
+@media only screen and (max-width: 31.875em) {
+    .arrow {
+        display:block;
+    } 
+}

@@ -1,0 +1,15 @@
+.main {
+    background-color: #fff; 
+}
+
+@media only screen and (max-width: 31.875em) {
+    .main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; 
+    } 
+}

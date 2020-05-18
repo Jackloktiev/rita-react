@@ -1,0 +1,137 @@
+.gallery {
+    margin-left: 15%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.5rem; 
+}
+
+@media only screen and (max-width: 68.75em) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); 
+    } 
+}
+
+@media only screen and (max-width: 56.25em) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 25%; 
+    } 
+}
+
+@media only screen and (max-width: 31.875em) {
+    .gallery {
+        margin-left: 0;
+        width: auto; 
+    } 
+}
+
+.gallery__item {
+    -webkit-box-shadow: 5px 5px 10px #888888;
+            box-shadow: 5px 5px 10px #888888;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    margin: 0 auto; 
+    position: relative;
+}
+
+.deleteIcon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(245,164,169,.5);
+    width: 50px;
+    height: 50px;
+    transition: all .2s;    
+}
+
+.deleteIcon:hover{
+    transform: scale(1.1);
+}
+
+.deleteIcon--img {
+    width: 100%;
+}
+
+.gallery__item:hover {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-box-shadow: 8px 8px 12px #888888;
+            box-shadow: 8px 8px 12px #888888; 
+}
+
+.gallery__item--descr {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #808080; 
+}
+
+.gallery__item--descr-title {
+    display: block;
+    font-weight: 700; 
+}
+
+.gallery__item--descr-text {
+    display: block; 
+}
+
+.gallery__img {
+    width: 100%;
+    height: 70vh;
+    -o-object-fit: cover;
+        object-fit: cover;
+    display: block; 
+}
+
+.test {
+    background-color: rgba(12, 12, 12, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.popup__item {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: auto;
+    z-index: 20;
+}
+
+
+@media  only screen 
+and (orientation: portrait) {
+    .popup__item {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: auto;
+        z-index: 20;
+    }
+}
+
+@media only screen 
+and (orientation: landscape) {
+    .popup__item {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 35%;
+        height: auto;
+        z-index: 20;
+    }
+}
+

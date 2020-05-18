@@ -1,0 +1,97 @@
+.Upload {
+    margin-left: 15%;
+    width: 80%;
+    display: grid;
+    grid-template-columns:  1fr;
+    gap: 1.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.5rem; 
+    align-self: center;
+    justify-self: center;
+}
+
+@media only screen and (max-width: 56.25em) {
+    .Upload {
+        margin-left: 25%;
+        width: auto; 
+    } 
+}
+
+@media only screen and (max-width: 31.875em) {
+    .Upload {
+        margin-left: 0;
+        width: auto; 
+    } 
+}
+
+
+.upload-form {
+    width: 80%;
+    justify-self: center;
+}
+
+.label {
+    display: block;
+    font-size: 2rem;
+    width: 100%;
+    justify-self: start;
+    margin-bottom: 1rem;
+}
+
+.input{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    height: 3rem;
+    padding: .5rem;
+}
+
+.uploadContainer {
+    text-align: left;
+    border: 1px solid #808080;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.button {
+    display: block;
+    width: 50%;
+    background-color: white;
+    color: #808080;
+    border: 1px solid #808080;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    justify-self: center;
+}
+
+.button:hover{
+    background-color: #808080;
+    color: white;
+}
+
+.buttonUpload{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.progressBar {
+    height: 2rem;
+    width: 100%;
+    margin-bottom: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.successInd {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
