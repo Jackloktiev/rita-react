@@ -94,7 +94,11 @@
     font-family: 'Comic Neue', cursive;
     text-transform: uppercase;
     font-size: 1.5rem; 
+    font-weight: 700;
     margin-bottom: 3rem;
+    text-decoration: none;
+    color: #808080;
+    display: block;
 }
 
 .sidebar__about:hover {
@@ -102,6 +106,7 @@
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
     cursor: pointer; 
+    
 }
 
 .sidebar__key {

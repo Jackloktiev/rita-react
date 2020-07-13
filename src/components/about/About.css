@@ -1,0 +1,29 @@
+.about_container {
+    margin-left: 15%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 56.25em) {
+    .about_container {
+        margin-left: 25%;
+        width: auto; 
+    } 
+}
+
+@media only screen and (max-width: 31.875em) {
+    .about_container {
+        margin-left: 0;
+        width: auto; 
+        padding: 3rem;
+    } 
+}
+
+.about_content {
+    text-align: center;
+    font-size: 2rem;
+    color: #808080;
+}

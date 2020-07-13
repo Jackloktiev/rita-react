@@ -70,13 +70,13 @@ function Sidebar(props) {
             </div>
             
             {categoriesSet}
-            <h3 className="sidebar__about">About</h3>
+            <NavLink to="/about" className="sidebar__about">About</NavLink>
 
             {display}
         </div>
 
         <div className={sideSocial}>
-            <img src="icons/vk.png" alt="Vkontakte icon" className="sidebar__social-media__icon"/>
+            <a href="https://vk.com/id595736761"><img src="icons/vk.png" alt="Vkontakte icon" className="sidebar__social-media__icon"/></a>
             <img src="icons/instagram2.png" alt="Instagram icon" className="sidebar__social-media__icon"/>
         </div>
 

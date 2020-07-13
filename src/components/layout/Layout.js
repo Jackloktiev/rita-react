@@ -3,6 +3,7 @@ import "./Layout.css";
 import Sidebar from "../sidebar/Sidebar";
 import Gallery from "../gallery/Gallery";
 import Upload from "../Upload/Upload";
+import About from "../about/About";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 
@@ -24,7 +25,7 @@ function Layout() {
     // Fetch pictures from the server
     useEffect(() => {
         // food items
-        fetch("/images.json", {
+        fetch("https://rita-a448c.firebaseio.com//images.json", {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
@@ -68,6 +69,7 @@ function Layout() {
             <Switch>
                 <Route path="/" exact render={()=><Gallery pictures = {filteredData} />} />
                 <Route path="/ritawantstoaddpicture" component={Upload} />
+                <Route path="/about" component={About} />
             </Switch>
         
         </BrowserRouter>
