@@ -77,7 +77,7 @@ function Sidebar(props) {
 
         <div className={sideSocial}>
             <a href="https://vk.com/id595736761"><img src="icons/vk.png" alt="Vkontakte icon" className="sidebar__social-media__icon"/></a>
-            <a href="https://www.instagram.com/invites/contact/?i=1fsrl2jzbipcf&utm_content=3xrohzp"></a><img src="icons/instagram2.png" alt="Instagram icon" className="sidebar__social-media__icon"/></a>
+            <a href="https://www.instagram.com/invites/contact/?i=1fsrl2jzbipcf&utm_content=3xrohzp"><img src="icons/instagram2.png" alt="Instagram icon" className="sidebar__social-media__icon"/></a>
         </div>
 
     </div>
